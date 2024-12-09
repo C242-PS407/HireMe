@@ -4,12 +4,19 @@ import android.content.Intent
 import android.content.SharedPreferences
 import android.os.Bundle
 import android.widget.Toast
+import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
+import com.example.hireme.data.model.User
 import com.example.hireme.databinding.ActivityLoginBinding
+import com.example.hireme.ui.ViewModelFactory
 import com.example.hireme.ui.main.MainActivity
 import com.example.hireme.ui.register.RegisterActivity
 
 class LoginActivity : AppCompatActivity() {
+    private val viewModel by viewModels<LoginViewModel> {
+        ViewModelFactory.getInstance(this)
+    }
+
     private lateinit var binding: ActivityLoginBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -37,10 +44,13 @@ class LoginActivity : AppCompatActivity() {
                         editor.apply()
                     }
 
+                    viewModel.saveSession(User(email, "token_example", true))
+
                     Toast.makeText(this, "Login successful!", Toast.LENGTH_SHORT).show()
 
                     // Lanjutkan ke halaman utama setelah login sukses
-                    val intent = Intent(this, MainActivity::class.java)
+                    val intent = Intent(this@LoginActivity, MainActivity::class.java)
+                    intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK
                     startActivity(intent)
                     finish()  // Menutup halaman login agar pengguna tidak bisa kembali
                 } else {

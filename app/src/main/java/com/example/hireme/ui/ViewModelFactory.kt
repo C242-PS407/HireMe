@@ -5,6 +5,7 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import com.example.hireme.data.Repository
 import com.example.hireme.data.di.Injection
+import com.example.hireme.ui.login.LoginViewModel
 import com.example.hireme.ui.main.MainViewModel
 
 class ViewModelFactory(private val repository: Repository) : ViewModelProvider.NewInstanceFactory() {
@@ -14,6 +15,9 @@ class ViewModelFactory(private val repository: Repository) : ViewModelProvider.N
         return when {
             modelClass.isAssignableFrom(MainViewModel::class.java) -> {
                 MainViewModel(repository) as T
+            }
+            modelClass.isAssignableFrom(LoginViewModel::class.java) -> {
+                LoginViewModel(repository) as T
             }
             else -> throw IllegalArgumentException("Unknown ViewModel class: " + modelClass.name)
         }
