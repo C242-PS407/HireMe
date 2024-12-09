@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/item_job_cv"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="4dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="12dp">
+
+        <ImageView
+            android:id="@+id/item_job_logo"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:paddingStart="0dp"
+            android:paddingEnd="16dp"
+            android:contentDescription="@string/item_job_logo"
+            android:src="@drawable/ic_baseline_business_42dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="@id/item_job_location" />
+
+        <TextView
+            android:id="@+id/item_job_title"
+            style="@style/Theme.HireMe.TextTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/item_job_title"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@id/item_job_logo"
+            />
+
+        <TextView
+            android:id="@+id/item_job_location"
+            style="@style/Theme.HireMe.TextRegular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/item_job_location"
+            app:layout_constraintTop_toBottomOf="@id/item_job_title"
+            app:layout_constraintStart_toEndOf="@id/item_job_logo" />
+
+        <TextView
+            android:id="@+id/item_job_salary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/item_job_salary"
+            android:fontFamily="@font/poppins_bold"
+            android:textColor="@color/emerald_600"
+            android:textStyle="bold"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="@id/item_job_location" />
+
+        <TextView
+            android:id="@+id/item_job_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="12dp"
+            android:text="@string/item_job_description"
+            android:maxLines="3"
+            android:ellipsize="end"
+            app:layout_constraintTop_toBottomOf="@id/item_job_location"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <ImageView
+            android:id="@+id/item_job_type_logo"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:contentDescription="@string/item_job_type"
+            android:src="@drawable/ic_outline_location_on_24dp"
+            app:layout_constraintTop_toTopOf="@id/item_job_type_text"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/item_job_type_text"
+            style="@style/Theme.HireMe.TextRegular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginStart="4dp"
+            android:text="@string/item_job_type"
+            android:textSize="12sp"
+            app:layout_constraintTop_toBottomOf="@id/item_job_description"
+            app:layout_constraintStart_toEndOf="@id/item_job_type_logo" />
+
+        <ImageView
+            android:id="@+id/item_job_accessibility_logo"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginEnd="4dp"
+            android:contentDescription="@string/item_job_accessibility"
+            android:src="@drawable/ic_outline_wheelchair_pickup_24dp"
+            app:layout_constraintTop_toTopOf="@id/item_job_type_text"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/item_job_accessibility_text" />
+
+        <TextView
+            android:id="@+id/item_job_accessibility_text"
+            style="@style/Theme.HireMe.TextRegular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/item_job_accessibility"
+            android:fontFamily="@font/poppins_bold"
+            android:textStyle="bold"
+            android:textColor="@color/emerald_600"
+            android:textSize="12sp"
+            app:layout_constraintTop_toTopOf="@id/item_job_type_text"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="@id/item_job_type_text"
+            app:layout_constraintStart_toEndOf="@id/item_job_type_text"
+            app:layout_constraintEnd_toStartOf="@id/item_job_accessibility_logo">
+
+        <ImageView
+            android:id="@+id/item_job_time_logo"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginEnd="4dp"
+            android:contentDescription="@string/item_job_time"
+            android:src="@drawable/ic_outline_alarm_24dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/item_job_time_text"/>
+
+        <TextView
+            android:id="@+id/item_job_time_text"
+            style="@style/Theme.HireMe.TextRegular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/item_job_time"
+            android:textSize="12sp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
