@@ -45,6 +45,4 @@
     <string name="email_hint">Enter your email address</string>
     <string name="password_hint">Enter your password</string>
     <string name="name_hint">Enter your full name</string>
-
-    <string name="web_client_id">1017543491591-gd4e4gbt9vrp82cgch2mbt1h7ahbb8a2.apps.googleusercontent.com</string>
 </resources>
