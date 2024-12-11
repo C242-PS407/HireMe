@@ -27,6 +27,7 @@ class RegisterActivity : AppCompatActivity() {
                 Toast.makeText(this, "Please fill all the fields", Toast.LENGTH_SHORT).show()
             } else {
                 Toast.makeText(this, "Registered successfully!", Toast.LENGTH_SHORT).show()
+                finish()
             }
         }
     }

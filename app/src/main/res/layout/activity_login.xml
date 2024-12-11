@@ -46,6 +46,7 @@
     <!-- Email Input -->
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/til_login_email"
+        android:theme="@style/Theme.HireMe.TextInput"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
@@ -65,6 +66,7 @@
     <!-- Password Input -->
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/til_login_password"
+        android:theme="@style/Theme.HireMe.TextInput"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
@@ -85,6 +87,7 @@
     <!-- Remember Me -->
     <CheckBox
         android:id="@+id/cb_login_remember_me"
+        android:theme="@style/Theme.HireMe.TextInput"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"

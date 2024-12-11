@@ -45,4 +45,8 @@
     <style name="Theme.HireMe.Button" parent="Theme.HireMe">
         <item name="android:backgroundTint">@color/blue_600</item>
     </style>
+
+    <style name="Theme.HireMe.TextInput" parent="Theme.HireMe">
+        <item name="colorPrimary">@color/blue_600</item>
+    </style>
 </resources>

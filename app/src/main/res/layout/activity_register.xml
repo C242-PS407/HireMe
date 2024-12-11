@@ -14,7 +14,6 @@
         style="@style/Theme.HireMe.TextTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
         android:text="@string/sign_up"
         android:textSize="24sp"
         app:layout_constraintTop_toTopOf="parent"
@@ -47,6 +46,7 @@
     <!-- Email Input -->
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/til_register_email"
+        android:theme="@style/Theme.HireMe.TextInput"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
@@ -66,6 +66,7 @@
     <!-- Name Input -->
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/til_register_name"
+        android:theme="@style/Theme.HireMe.TextInput"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
@@ -85,6 +86,7 @@
     <!-- Password Input -->
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/til_register_password"
+        android:theme="@style/Theme.HireMe.TextInput"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
