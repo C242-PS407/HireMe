@@ -1,12 +1,14 @@
 package com.example.hireme.data.pref
 
 import android.content.Context
+import android.net.Uri
 import androidx.datastore.core.DataStore
 import androidx.datastore.preferences.core.Preferences
 import androidx.datastore.preferences.core.booleanPreferencesKey
 import androidx.datastore.preferences.core.edit
 import androidx.datastore.preferences.core.stringPreferencesKey
 import androidx.datastore.preferences.preferencesDataStore
+import com.example.hireme.data.model.CV
 import com.example.hireme.data.model.User
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.map
@@ -21,6 +23,29 @@ class Preference private constructor(private val dataStore: DataStore<Preference
             preferences[EMAIL_KEY] = user.email
             preferences[TOKEN_KEY] = user.token
             preferences[IS_LOGIN_KEY] = true
+        }
+    }
+
+    suspend fun addCV(cv: CV) {
+        dataStore.edit { preferences ->
+            preferences[CV_NAME_KEY] = cv.name
+            preferences[CV_URI_KEY] = cv.uri
+        }
+    }
+
+    fun getCV(): Flow<CV> {
+        return dataStore.data.map { preferences ->
+            CV(
+            preferences[CV_NAME_KEY] ?: "",
+            preferences[CV_URI_KEY] ?: ""
+            )
+        }
+    }
+
+    suspend fun removeCV() {
+        dataStore.edit { preferences ->
+            preferences.remove(CV_NAME_KEY)
+            preferences.remove(CV_URI_KEY)
         }
     }
 
@@ -49,6 +74,8 @@ class Preference private constructor(private val dataStore: DataStore<Preference
         private val EMAIL_KEY = stringPreferencesKey("email")
         private val TOKEN_KEY = stringPreferencesKey("token")
         private val IS_LOGIN_KEY = booleanPreferencesKey("isLogin")
+        private val CV_NAME_KEY = stringPreferencesKey("cv_name")
+        private val CV_URI_KEY = stringPreferencesKey("cv_uri")
 
         fun getInstance(dataStore: DataStore<Preferences>): Preference {
             return INSTANCE ?: synchronized(this) {

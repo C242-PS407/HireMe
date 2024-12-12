@@ -13,26 +13,39 @@ import com.example.hireme.data.Result
 import com.example.hireme.data.api.request.LoginRequest
 import com.example.hireme.data.api.request.SignupRequest
 import com.example.hireme.data.api.response.ErrorResponse
+import com.example.hireme.data.model.CV
 import com.google.gson.Gson
 import retrofit2.HttpException
 
 class Repository private constructor(
     private val apiService: ApiService,
-    private val userPreference: Preference
+    private val preference: Preference
 ) {
     private val loginResult = MediatorLiveData<Result<LoginResponse>?>()
     private val registerResult = MediatorLiveData<Result<SignupResponse>?>()
 
     suspend fun saveSession(user: User) {
-        userPreference.saveSession(user)
+        preference.saveSession(user)
     }
 
     fun getSession(): Flow<User> {
-        return userPreference.getSession()
+        return preference.getSession()
     }
 
     suspend fun logout() {
-        userPreference.logout()
+        preference.logout()
+    }
+
+    suspend fun addCV(cv: CV) {
+        preference.addCV(cv)
+    }
+
+    suspend fun removeCV() {
+        preference.removeCV()
+    }
+
+    fun getCV(): Flow<CV> {
+        return preference.getCV()
     }
 
     private fun postLogin(email: String, password: String): LiveData<Result<LoginResponse>> = liveData {
