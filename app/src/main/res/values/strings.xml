@@ -45,4 +45,10 @@
     <string name="email_hint">Enter your email address</string>
     <string name="password_hint">Enter your password</string>
     <string name="name_hint">Enter your full name</string>
+    <string name="success_login">Login Successful</string>
+    <string name="success">Success</string>
+    <string name="next">Continue</string>
+    <string name="success_register">User Successfully Registered</string>
+    <string name="empty_login_fields">Please enter email and password</string>
+    <string name="empty_register_fields">Please fill all the fields</string>
 </resources>
