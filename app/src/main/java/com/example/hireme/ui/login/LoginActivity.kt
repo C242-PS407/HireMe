@@ -10,7 +10,7 @@ import androidx.activity.viewModels
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import com.example.hireme.R
-import com.example.hireme.data.model.User
+import com.example.hireme.data.local.model.User
 import com.example.hireme.databinding.ActivityLoginBinding
 import com.example.hireme.ui.ViewModelFactory
 import com.example.hireme.ui.main.MainActivity

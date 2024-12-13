@@ -26,9 +26,11 @@
     <string name="item_job_location">Company • Location</string>
     <string name="item_job_salary">Salary</string>
     <string name="item_job_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</string>
-    <string name="item_job_type">Job type</string>
+    <string name="item_job_type">Job Type</string>
     <string name="item_job_accessibility">Job Accessibility</string>
     <string name="item_job_time">Job Time</string>
+    <string name="accessible">Accessible</string>
+    <string name="not_accessible">Not Accessible</string>
 
     <string name="login">Login</string>
     <string name="logout">Logout</string>
@@ -51,4 +53,132 @@
     <string name="success_register">User Successfully Registered</string>
     <string name="empty_login_fields">Please enter email and password</string>
     <string name="empty_register_fields">Please fill all the fields</string>
+
+    <string name="jobs_recommended_title">Recommended Jobs</string>
+
+    <string name="detail_name">Job Name</string>
+    <string name="detail_company_name">Company Name</string>
+    <string name="detail_location_name">Location • Onsite/Remote</string>
+    <string name="detail_accessibility_title">Disability</string>
+    <string name="detail_description_title">Job Description</string>
+    <string name="detail_requirement_title">Requirements</string>
+    <string name="detail_apply">Apply for this Job</string>
+
+    <string-array name="data_logo">
+        <item>@drawable/img_company_google_detail</item>
+        <item>@drawable/img_company_spotify_detail</item>
+        <item>@drawable/img_company_pertamina_detail</item>
+        <item>@drawable/img_company_tokopedia_detail</item>
+        <item>@drawable/img_company_netflix_detail</item>
+        <item>@drawable/img_company_gojek_detail</item>
+    </string-array>
+
+    <string-array name="data_name">
+        <item>Machine Learning Engineer</item>
+        <item>Data Analyst</item>
+        <item>Business Analyst</item>
+        <item>Software Engineer (Frontend)</item>
+        <item>Backend Developer</item>
+        <item>Product Manager</item>
+    </string-array>
+
+   <string-array name="data_company">
+       <item>Google</item>
+       <item>Spotify</item>
+       <item>Pertamina</item>
+       <item>Tokopedia</item>
+       <item>Netflix</item>
+       <item>Gojek</item>
+   </string-array>
+
+    <string-array name="data_location">
+        <item>Singapore</item>
+        <item>Jakarta</item>
+        <item>Indonesia</item>
+        <item>Jakarta</item>
+        <item>Jakarta</item>
+        <item>Jakarta</item>
+    </string-array>
+
+    <string-array name="data_job_type">
+        <item>Onsite</item>
+        <item>Onsite</item>
+        <item>Onsite</item>
+        <item>Onsite</item>
+        <item>Remote</item>
+        <item>Onsite</item>
+    </string-array>
+
+    <string-array name="data_job_time">
+        <item>Full-Time</item>
+        <item>Full-Time</item>
+        <item>Full-Time</item>
+        <item>Full-Time</item>
+        <item>Full-Time</item>
+        <item>Full-Time</item>
+    </string-array>
+
+    <string-array name="data_accessibility_status">
+        <item>true</item>
+        <item>false</item>
+        <item>true</item>
+        <item>false</item>
+        <item>true</item>
+        <item>true</item>
+    </string-array>
+
+    <string-array name="data_salary">
+        <item>Rp 50-70 Jt</item>
+        <item>Rp 20-30 Jt</item>
+        <item>Rp 15-25 Jt</item>
+        <item>Rp 12-20 Jt</item>
+        <item>Rp 20-30 Jt</item>
+        <item>Rp 25-40 Jt</item>
+    </string-array>
+
+    <string-array name="data_description">
+    <item>Google invites you to join as a Machine Learning Engineer if you have expertise in machine learning. In this role, you will design and implement machine learning models for various Google applications, analyze large datasets to generate strategic insights, and collaborate with global teams to develop AI-based innovative solutions.
+        The ideal candidate holds a Master\'s or Ph.D. degree in Computer Science, has work experience with Python, TensorFlow, or other ML frameworks, and possesses a deep understanding of algorithms, statistics, and optimization.</item>
+        <item>Spotify is looking for a Data Analyst responsible for managing and analyzing user data to support content strategy. You will create interactive reports using tools such as SQL, Python, or R, and provide data-driven insights to enhance the Spotify user experience.
+        The ideal candidate has at least two years of experience in data analytics, a strong understanding of SQL and statistical analysis, and excellent communication skills to explain data to non-technical teams.</item>
+        <item>Pertamina offers an opportunity for those with business analysis expertise to join as a Business Analyst. You will be responsible for analyzing business needs to support company strategy, preparing data-driven reports, and providing recommendations to management. Additionally, you will coordinate with various divisions to improve operational efficiency.
+        To qualify for this role, you need a minimum Bachelor\'s degree in Management, Industrial Engineering, or Economics, with strong data analysis skills and experience using tools like Tableau or advanced Excel. This position requires effective communication skills, both verbal and written.</item>
+        <item>Tokopedia is looking for a Software Engineer (Frontend) to build and develop intuitive and responsive user interfaces. In this role, you will collaborate with product and design teams to create optimal user experiences and ensure application performance and scalability using best practices.
+        This position requires a degree in Computer Science or equivalent, with a minimum of two years of experience in frontend development using React.js or Angular. Candidates must also have a deep understanding of HTML, CSS, and JavaScript, as well as strong problem-solving skills and attention to detail.</item>
+        <item>Netflix is looking for an experienced Backend Developer to build reliable and scalable backend systems to support their global streaming service. You will work with cross-functional teams to design cloud-based solutions and address high-level technical challenges with innovative approaches.
+        This position requires a Bachelor\'s or Master\'s degree in Computer Science or equivalent work experience, expertise in backend development using Java, Go, or Python, and experience with distributed systems and cloud-based architectures.</item>
+        <item>As a Product Manager at Gojek, you will lead the product development strategy from concept to launch, ensuring its success in the market. You will work closely with development, design, and marketing teams to create new features relevant to users. Additionally, you will leverage data and customer feedback to continuously improve the product.
+        Gojek is looking for candidates with at least three years of experience in a similar position, a solid understanding of Agile product development methods, and strong communication and leadership skills.</item>
+    </string-array>
+
+    <string-array name="data_requirement">
+    <item>Master\'s or Ph.D. degree in Computer Science or related field.
+Experience with Python, TensorFlow, and other ML frameworks.
+Understanding of algorithms, statistics, and optimization.</item>
+        <item>At least 2 years of experience in data analytics.
+Deep understanding of SQL, statistical analysis, and data visualization.
+Effective communication skills to explain data to non-technical teams.</item>
+        <item>Minimum Bachelor\'s degree in Management, Industrial Engineering, or Economics.
+Strong data analysis skills and experience with software like Tableau or advanced Excel.
+Effective communication, both verbal and written.</item>
+        <item>Degree in Computer Science or related field.
+At least 2 years of experience in frontend development using React.js/Angular.
+Deep understanding of HTML, CSS, and JavaScript.
+Detail-oriented with strong problem-solving skills.</item>
+        <item>Bachelor\'s/Master\'s degree in Computer Science or equivalent work experience.
+Expertise in backend development using Java, Go, or Python.
+Experience with distributed systems and cloud-based architectures.</item>
+        <item>At least 3 years of experience as a Product Manager.
+Knowledge of Agile product development methods.
+Strong communication and leadership skills.</item>
+    </string-array>
+
+    <string-array name="data_link">
+        <item>https://www.google.com/about/careers/applications/</item>
+        <item>https://www.lifeatspotify.com/jobs</item>
+        <item>https://recruitment.pertamina.com/company</item>
+        <item>https://www.tokopedia.com/careers/jobs</item>
+        <item>https://jobs.netflix.com/</item>
+        <item>https://www.gojek.io/careers</item>
+    </string-array>
 </resources>

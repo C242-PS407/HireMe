@@ -1,15 +1,14 @@
-package com.example.hireme.data.pref
+package com.example.hireme.data.local.pref
 
 import android.content.Context
-import android.net.Uri
 import androidx.datastore.core.DataStore
 import androidx.datastore.preferences.core.Preferences
 import androidx.datastore.preferences.core.booleanPreferencesKey
 import androidx.datastore.preferences.core.edit
 import androidx.datastore.preferences.core.stringPreferencesKey
 import androidx.datastore.preferences.preferencesDataStore
-import com.example.hireme.data.model.CV
-import com.example.hireme.data.model.User
+import com.example.hireme.data.local.model.CV
+import com.example.hireme.data.local.model.User
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.map
 

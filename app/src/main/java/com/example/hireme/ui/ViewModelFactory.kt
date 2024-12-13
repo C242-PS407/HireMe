@@ -5,6 +5,8 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import com.example.hireme.data.Repository
 import com.example.hireme.data.di.Injection
+import com.example.hireme.ui.home.HomeViewModel
+import com.example.hireme.ui.jobs.JobsViewModel
 import com.example.hireme.ui.login.LoginViewModel
 import com.example.hireme.ui.main.MainViewModel
 import com.example.hireme.ui.profile.ProfileViewModel
@@ -26,6 +28,12 @@ class ViewModelFactory(private val repository: Repository) : ViewModelProvider.N
             }
             modelClass.isAssignableFrom(ProfileViewModel::class.java) -> {
                 ProfileViewModel(repository) as T
+            }
+            modelClass.isAssignableFrom(JobsViewModel::class.java) -> {
+                JobsViewModel(repository) as T
+            }
+            modelClass.isAssignableFrom(HomeViewModel::class.java) -> {
+                HomeViewModel(repository) as T
             }
             else -> throw IllegalArgumentException("Unknown ViewModel class: " + modelClass.name)
         }

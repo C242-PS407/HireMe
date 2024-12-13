@@ -1,4 +1,4 @@
-package com.example.hireme.data.model
+package com.example.hireme.data.local.model
 
 data class CV (
     val name: String,

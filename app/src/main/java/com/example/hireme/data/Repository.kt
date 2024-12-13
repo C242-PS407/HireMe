@@ -6,14 +6,13 @@ import androidx.lifecycle.liveData
 import com.example.hireme.data.api.ApiService
 import com.example.hireme.data.api.response.LoginResponse
 import com.example.hireme.data.api.response.SignupResponse
-import com.example.hireme.data.model.User
-import com.example.hireme.data.pref.Preference
+import com.example.hireme.data.local.model.User
+import com.example.hireme.data.local.pref.Preference
 import kotlinx.coroutines.flow.Flow
-import com.example.hireme.data.Result
 import com.example.hireme.data.api.request.LoginRequest
 import com.example.hireme.data.api.request.SignupRequest
 import com.example.hireme.data.api.response.ErrorResponse
-import com.example.hireme.data.model.CV
+import com.example.hireme.data.local.model.CV
 import com.google.gson.Gson
 import retrofit2.HttpException
 
